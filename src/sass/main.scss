@@ -1,0 +1,22 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/animations';
+
+
+@import 'pages/home';
+
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/carousel';
+@import 'components/slider';
+@import 'components/blog';
+@import 'components/slick';
+@import 'components/navbar';
+@import 'components/comments';
+@import 'components/categoriesList';

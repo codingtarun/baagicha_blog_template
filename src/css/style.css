@@ -1,0 +1,173 @@
+/*
+0-600px : Phone
+600pxm- 900px : Tablet Port
+900px - 1200px : Tablet Land
+1200px - 1800px : Desktop/Laptop
+1800 + px : Big desktop
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 87.5%; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7; }
+
+.heading_primary {
+  font-size: 3rem;
+  color: black; }
+
+.heading_secondary {
+  font-size: 3rem;
+  color: rgba(128, 128, 128, 0.9); }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  50% {
+    opacity: .5;
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes scaleUpDown {
+  0% {
+    transform: scale(1.3); }
+  50% {
+    transform: scale(0.9); }
+  100% {
+    transform: scale(1); } }
+
+li.current_page_item a,
+li.current-menu-item a {
+  color: rgba(76, 175, 80, 0.7) !important;
+  border-bottom: 1px solid rgba(76, 175, 80, 0.7) !important; }
+
+#hero_container .hero_slider {
+  padding: 0;
+  position: relative; }
+  #hero_container .hero_slider a:link,
+  #hero_container .hero_slider a:visited,
+  #hero_container .hero_slider a:active {
+    text-decoration: none;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem; }
+
+.slider_box {
+  margin: .8rem 1rem; }
+  .slider_box--link {
+    display: block;
+    text-decoration: none;
+    text-align: center; }
+    .slider_box--link-img {
+      overflow: hidden; }
+      .slider_box--link-img img {
+        transition: all 0.3s ease-in-out; }
+    .slider_box--link h3 {
+      color: rgba(128, 128, 128, 0.9);
+      font-size: 0.9rem; }
+    .slider_box--link h2 {
+      color: black;
+      font-size: 1.2rem; }
+
+.slider_box:hover .slider_box--link-img img {
+  transform: scale(1.01); }
+
+#blog {
+  background: radial-gradient(#e5dcdc 5%, transparent 10%) 0px 0px/20px 20px, radial-gradient(rgba(220, 220, 220, 0.2) 0%, transparent 0%) 50px 50px rgba(220, 220, 220, 0.2);
+  padding: 5rem .5rem; }
+
+.blog_slider {
+  width: 92%;
+  margin: 1rem auto; }
+  .blog_slider_box--link {
+    text-decoration: none;
+    display: block;
+    margin: .3rem 1rem;
+    height: 95%; }
+    .blog_slider_box--link-img {
+      overflow: hidden; }
+      .blog_slider_box--link-img img {
+        transition: all 0.3s ease-in-out; }
+    .blog_slider_box--link h3 {
+      padding: .5rem;
+      color: rgba(128, 128, 128, 0.9);
+      font-size: 0.9rem;
+      margin: .1rem 0; }
+    .blog_slider_box--link h2 {
+      padding: .5rem;
+      color: black;
+      font-size: 1.2rem;
+      margin: .1rem 0;
+      text-align: justify; }
+    .blog_slider_box--link p {
+      color: rgba(0, 0, 0, 0.9);
+      font-size: 1rem;
+      text-align: justify;
+      padding: .5rem; }
+  .blog_slider_box:hover .blog_slider_box--link-img img {
+    transform: scale(1.01); }
+
+.slick-slider button.slick-arrow {
+  height: 100%;
+  width: 4rem; }
+
+.slick-slider button.slick-prev {
+  left: -3rem;
+  z-index: 100 !important;
+  /*box-shadow: none;
+        background-image: url(https://images.yourstory.com/assets/icons/ic_brands_next_arrow.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        right: -3.2rem;*/ }
+  .slick-slider button.slick-prev::before {
+    font-size: 3rem;
+    color: gray; }
+
+.slick-slider button.slick-next {
+  right: -3rem; }
+  .slick-slider button.slick-next::before {
+    font-size: 3rem;
+    color: gray; }
+
+ul#custom_link_class li a:link,
+ul#custom_link_class li a:visited {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 .5rem;
+  padding: .5rem;
+  color: rgba(0, 0, 0, 0.9); }
+
+#all_categories {
+  display: block;
+  text-align: center; }
+  #all_categories li.categories {
+    list-style: none; }
+    #all_categories li.categories ul li.cat-item {
+      list-style: none;
+      display: inline-block; }
+      #all_categories li.categories ul li.cat-item a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.9);
+        display: block;
+        font-size: .8rem; }
+        #all_categories li.categories ul li.cat-item a:hover {
+          cursor: pointer;
+          text-decoration: underline;
+          color: rgba(76, 175, 80, 0.9); }

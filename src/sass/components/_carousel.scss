@@ -1,0 +1,25 @@
+#hero_container {
+    .hero {
+        &_slider {
+            padding: 0;
+            position: relative;
+
+            & img {}
+
+            & a:link,
+            & a:visited,
+            & a:active {
+                text-decoration: none;
+                color: $colorWhite;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+                display: block;
+                background-color: rgba($colorBlack , 0.6);
+                padding: 2rem;
+            }
+        }
+    }
+}
